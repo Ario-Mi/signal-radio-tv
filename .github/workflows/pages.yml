@@ -1,0 +1,43 @@
+name: Publish SIGNAL Studio demo
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Build static demo
+        run: python3 scripts/build_demo.py
+
+      - name: Check static demo
+        run: python3 tests/check_demo.py
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload demo only
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: demo
+
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4
