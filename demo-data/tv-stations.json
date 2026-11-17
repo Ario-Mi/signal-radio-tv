@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "HR Fernsehen",
+    "stream_url": "https://hrhls.akamaized.net/hls/live/2024525/hrhls/master.m3u8",
+    "stream_type": "hls",
+    "web_url": "https://www.ardmediathek.de/hr/live",
+    "logo": "assets/images/signal-tv.svg"
+  },
+  {
+    "id": 2,
+    "name": "ZDF",
+    "stream_url": "https://zdf-hls-15.akamaized.net/hls/live/2016498/de/high/master.m3u8",
+    "stream_type": "hls",
+    "web_url": "https://www.zdf.de/live-tv",
+    "logo": "assets/images/signal-tv.svg"
+  },
+  {
+    "id": 3,
+    "name": "BR Fernsehen Süd",
+    "stream_url": "https://mcdn.br.de/br/fs/bfs_sued/hls/de/master.m3u8",
+    "stream_type": "hls",
+    "web_url": "https://www.br.de/mediathek/live",
+    "logo": "assets/images/signal-tv.svg"
+  },
+  {
+    "id": 4,
+    "name": "ARTE",
+    "stream_url": "https://artesimulcast.akamaized.net/hls/live/2030993/artelive_de/master_v720.m3u8",
+    "stream_type": "hls",
+    "web_url": "https://www.arte.tv/de/live/",
+    "logo": "assets/images/signal-tv.svg"
+  },
+  {
+    "id": 5,
+    "name": "phoenix",
+    "stream_url": "https://zdf-hls-19.akamaized.net/hls/live/2016502/de/high/master.m3u8",
+    "stream_type": "hls",
+    "web_url": "https://www.phoenix.de/livestream.html",
+    "logo": "assets/images/signal-tv.svg"
+  },
+  {
+    "id": 6,
+    "name": "WDR Fernsehen",
+    "stream_url": "https://wdrfs247.akamaized.net/hls/live/681509/wdr_msl4_fs247/index.m3u8",
+    "stream_type": "hls",
+    "web_url": "https://www1.wdr.de/fernsehen/index.html",
+    "logo": "assets/images/signal-tv.svg"
+  }
+]

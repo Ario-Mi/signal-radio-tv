@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Responsiver SIGNAL Studio TV-Player mit sechs Live-Sendern.">
+    <title>SIGNAL TV-Player</title>
+    <link rel="stylesheet" href="../assets/css/studio.css?v=3">
+    <link rel="stylesheet" href="assets/css/tvplayer.css">
+</head>
+<body class="signal-site">
+<a class="skip-link" href="#inhalt">Zum Inhalt</a><div class="studio-shell"><header class="studio-header"><a class="studio-brand" href="../index.html"><img src="../easy-radio/assets/images/signal-radio.svg" alt="" width="42" height="42"><span>SIGNAL STUDIO<small>Radio &amp; TV</small></span></a><nav class="studio-nav" aria-label="Hauptnavigation"><a href="../easy-radio/player.html">Radio</a><a href="../tv-player/player.html" aria-current="page">Live TV</a><a href="../admin/login.php">Verwaltung</a></nav></header>
+<div class="player-layout">
+    <main id="inhalt" class="signal-tv-player" data-tv-player aria-labelledby="signal-tv-title">
+        <header class="tv-brand">
+            <img class="tv-logo" src="assets/images/signal-tv.svg" width="88" height="88" alt="SIGNAL Studio TV-Logo">
+            <div>
+                <span class="tv-kicker">SIGNAL Studio</span>
+                <h1 id="signal-tv-title">Live TV</h1>
+            </div>
+        </header>
+
+        <p class="tv-intro">Wähle einen Sender und starte den Livestream.</p>
+
+        <div class="tv-screen">
+            <video class="tv-video" controls playsinline preload="metadata" aria-label="TV-Player"></video>
+        </div>
+
+        <strong class="tv-current-channel" aria-live="polite">Kein TV-Sender ausgewählt</strong>
+        <div class="tv-channels" role="group" aria-label="TV-Sender"></div>
+        <p class="tv-status" role="status" aria-live="polite"></p>
+    </main>
+
+</div>
+<footer class="studio-footer"><span>SIGNAL Studio &middot; Radio &amp; Live TV</span><nav aria-label="Weitere Links"><a href="../easy-radio/player.html">Radio h&ouml;ren</a><a href="../tv-player/player.html">TV ansehen</a></nav></footer></div>
+    <script src="assets/js/hls.min.js"></script>
+    <script>
+        window.signalTvSettings = {
+            apiUrl: new URL('../tv-json/get_stations.php', window.location.href).href,
+            fallbackLogo: new URL('assets/images/signal-tv.svg', window.location.href).href,
+            errorMessage: 'Die TV-Sender konnten nicht geladen werden. Bitte versuche es erneut.'
+        };
+    </script>
+    <script src="assets/js/tvplayer.js"></script>
+</body>
+</html>

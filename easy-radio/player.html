@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Responsiver SIGNAL Studio Radio-Player mit Genre- und Senderauswahl.">
+    <title>SIGNAL Radio-Player</title>
+    <link rel="stylesheet" href="../assets/css/studio.css?v=3">
+    <link rel="stylesheet" href="assets/css/radioplayer.css">
+</head>
+<body class="signal-site">
+<a class="skip-link" href="#inhalt">Zum Inhalt</a><div class="studio-shell"><header class="studio-header"><a class="studio-brand" href="../index.html"><img src="../easy-radio/assets/images/signal-radio.svg" alt="" width="42" height="42"><span>SIGNAL STUDIO<small>Radio &amp; TV</small></span></a><nav class="studio-nav" aria-label="Hauptnavigation"><a href="../easy-radio/player.html" aria-current="page">Radio</a><a href="../tv-player/player.html">Live TV</a><a href="../admin/login.php">Verwaltung</a></nav></header>
+<div class="player-layout">
+    <main id="inhalt" class="signal-radio-player" data-radio-player aria-labelledby="signal-radio-title-html">
+        <div class="rp-brand">
+            <img class="rp-logo" src="assets/images/signal-radio.svg" width="96" height="96" alt="SIGNAL Studio Radio-Logo">
+            <div>
+                <span class="rp-kicker">SIGNAL Studio</span>
+                <h1 id="signal-radio-title-html">Live Radio</h1>
+            </div>
+        </div>
+
+        <p class="rp-intro">Wähle ein Genre und starte deinen Lieblingssender.</p>
+
+        <div class="rp-section">
+            <p class="rp-label">Genre auswählen</p>
+            <div class="rp-genre" role="group" aria-label="Radio-Genres"></div>
+        </div>
+
+        <div class="rp-now-playing" aria-live="polite">
+            <img class="rp-current-logo" src="assets/images/signal-radio.svg" width="132" height="132" alt="SIGNAL Radio">
+            <strong class="rp-current-station">Kein Sender ausgewählt</strong>
+        </div>
+
+        <audio class="rp-audio-player" controls preload="none" aria-label="Radio-Player"></audio>
+
+        <div class="rp-section">
+            <p class="rp-label">Sender auswählen</p>
+            <div class="rp-station" role="group" aria-label="Radiosender"></div>
+        </div>
+
+        <p class="rp-status" role="status" aria-live="polite"></p>
+    </main>
+
+</div>
+<footer class="studio-footer"><span>SIGNAL Studio &middot; Radio &amp; Live TV</span><nav aria-label="Weitere Links"><a href="../easy-radio/player.html">Radio h&ouml;ren</a><a href="../tv-player/player.html">TV ansehen</a></nav></footer></div>
+    <script>
+        window.signalRadioSettings = {
+            apiBaseUrl: new URL('../', window.location.href).href,
+            brandLogo: new URL('assets/images/signal-radio.svg', window.location.href).href,
+            defaultLogo: new URL('assets/images/signal-radio.svg', window.location.href).href,
+            errorMessage: 'Die Sender konnten nicht geladen werden. Bitte versuche es erneut.'
+        };
+    </script>
+    <script src="assets/js/radioplayer.js"></script>
+</body>
+</html>

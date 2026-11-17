@@ -1,0 +1,42 @@
+[
+  {
+    "id": 7,
+    "name": "JazzRadio Berlin",
+    "genre_id": 5,
+    "stream_url": "https://streaming.radio.co/s774887f7b/listen",
+    "web_url": "https://jazzradio.net/",
+    "logo": "assets/images/signal-radio.svg"
+  },
+  {
+    "id": 8,
+    "name": "Klassik Radio",
+    "genre_id": 1,
+    "stream_url": "https://stream.klassikradio.de/live/mp3-192/",
+    "web_url": "",
+    "logo": "assets/images/signal-radio.svg"
+  },
+  {
+    "id": 5,
+    "name": "NDR 2",
+    "genre_id": 1,
+    "stream_url": "https://icecast.ndr.de/ndr/ndr2/hamburg/mp3/128/stream.mp3",
+    "web_url": "",
+    "logo": "assets/images/signal-radio.svg"
+  },
+  {
+    "id": 6,
+    "name": "ROCK ANTENNE Hamburg",
+    "genre_id": 4,
+    "stream_url": "https://stream.rockantenne.hamburg/rockantenne-hamburg/stream/mp3",
+    "web_url": "",
+    "logo": "assets/images/signal-radio.svg"
+  },
+  {
+    "id": 4,
+    "name": "Radio Hamburg",
+    "genre_id": 7,
+    "stream_url": "https://stream.radiohamburg.de/live/mp3-192/",
+    "web_url": "",
+    "logo": "assets/images/signal-radio.svg"
+  }
+]

@@ -1,0 +1,41 @@
+Radio & TV in Gutenberg einbinden
+=================================
+
+Bei neuer Installation zuerst database/schema.sql und optional database/seed.sql importieren. Bei bestehender Installation keine erneuten Importe ausfuehren. Danach die Player pruefen.
+
+Empfohlene Block-Reihenfolge auf der Seite „Radio & TV“:
+
+1. Überschrift H2: Radio direkt im Browser hören
+2. Absatz: Entdecke sechs ausgewählte Radiosender und filtere sie nach Genre.
+3. Block „Individuelles HTML“ mit:
+
+<iframe
+  src="/radio_projekt/easy-radio/player.html"
+  title="SIGNAL Studio Radio-Player als HTML-Version"
+  style="display:block;width:100%;height:940px;border:0;border-radius:22px;background:#0b0f14;"
+  loading="lazy"
+  allow="autoplay">
+</iframe>
+
+4. Überschrift H2: Radio-Player als WordPress-Plugin
+5. Absatz: Zwei unabhängig bedienbare Plugin-Instanzen demonstrieren den SIGNAL Radio-Shortcode.
+6. Shortcode-Block: [easy_radio]
+7. Shortcode-Block: [easy_radio]
+
+8. Überschrift H2: Live-TV
+9. Absatz: Sechs TV-Sender werden über das eigene TV-Backend verwaltet.
+10. Block „Individuelles HTML“ mit:
+
+<iframe
+  src="/radio_projekt/tv-player/player.html"
+  title="SIGNAL Studio TV-Player mit sechs Sendern"
+  style="display:block;width:100%;height:850px;border:0;border-radius:22px;background:#0b0f14;"
+  loading="lazy"
+  allow="autoplay; fullscreen"
+  allowfullscreen>
+</iframe>
+
+Mobile Prüfung:
+- Falls der HTML-Radio-Player unten abgeschnitten ist, die Höhe auf 1150px erhöhen.
+- Desktop, Tablet und Smartphone jeweils testen.
+- Bei allen drei Player-Bereichen muss die Startlautstärke 10 Prozent betragen.

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-labelledby="title desc">
+  <title id="title">SIGNAL Radio</title>
+  <desc id="desc">Grünes Radio-Symbol mit Signalwellen auf dunklem Hintergrund</desc>
+  <rect x="8" y="20" width="144" height="124" rx="28" fill="#0b0f14" stroke="#b8ff3d" stroke-width="6"/>
+  <path d="M42 20 88 3" fill="none" stroke="#b8ff3d" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="55" cy="87" r="25" fill="none" stroke="#b8ff3d" stroke-width="7"/>
+  <path d="M42 87h26M55 74v26" stroke="#b8ff3d" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="116" cy="72" r="10" fill="#b8ff3d"/>
+  <circle cx="116" cy="107" r="10" fill="none" stroke="#b8ff3d" stroke-width="6"/>
+  <path d="M30 45h100" stroke="#b8ff3d" stroke-width="6" stroke-linecap="round" opacity=".75"/>
+</svg>
